@@ -1,12 +1,117 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog santiago</title>
-    <link rel="stylesheet" href="./assets/css/main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Las Delicias de la Abuela Lola</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#fdf6ee;
+    }
+
+    header{
+      height:100vh;
+      background:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1600&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      color:white;
+      padding:20px;
+    }
+
+    .contenido{
+      max-width:700px;
+    }
+
+    .contenido h1{
+      font-size:4rem;
+      margin-bottom:20px;
+      color:#ffe4b5;
+      text-shadow:2px 2px 10px rgba(0,0,0,0.7);
+    }
+
+    .contenido p{
+      font-size:1.4rem;
+      margin-bottom:30px;
+      line-height:1.6;
+    }
+
+    .botones{
+      display:flex;
+      gap:15px;
+      justify-content:center;
+      flex-wrap:wrap;
+    }
+
+    .botones a{
+      text-decoration:none;
+      padding:15px 30px;
+      border-radius:50px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .menu{
+      background:#c0392b;
+      color:white;
+    }
+
+    .menu:hover{
+      background:#e74c3c;
+    }
+
+    .reservas{
+      background:#f4d03f;
+      color:#333;
+    }
+
+    .reservas:hover{
+      background:#f7dc6f;
+    }
+
+    @media(max-width:768px){
+      .contenido h1{
+        font-size:2.5rem;
+      }
+
+      .contenido p{
+        font-size:1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    
+
+  <header>
+    <div class="contenido">
+      <h1>Las Delicias de la Abuela Lola</h1>
+
+      <p>
+        Recetas tradicionales hechas con amor, sabor casero
+        y el auténtico toque de la abuela.
+      </p>
+
+      <div class="botones">
+        <a href="#" class="menu">Ver Menú</a>
+        <a href="#" class="reservas">Reservar</a>
+      </div>
+    </div>
+  </header>
+
 </body>
 </html>
+         
